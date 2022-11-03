@@ -54,27 +54,31 @@ namespace WarriorWars
 
         public void Attack(Warrior enemy)
         {
-            int damage = 4;
+            int damage = 10;
 
-            enemy.health -=  damage;
+            enemy.health -= damage;
 
+            AttackResult(enemy, damage);
+            Thread.Sleep(200);
+        }
+
+        private void AttackResult(Warrior enemy, int damage)
+        {
             if (enemy.health <= 0)
             {
                 enemy.isAlive = false;
 
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine($"{enemy.name} IS DEAD , {name} IS VICTORIUS");
-                Console.ResetColor();
+                Tools.ColorfulWriteLine($"{enemy.name} IS DEAD , ", ConsoleColor.DarkRed);
+                Tools.ColorfulWriteLine($"{name} IS VICTORIUS!!", ConsoleColor.Yellow);
             }
 
             else
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"{name} attacked {enemy.name}.Damage {damage} was inflicted ,remaining health is  {enemy.health} ");
+
+                Tools.ColorfulWriteLine($"{name} attacked {enemy.name}.Damage {damage} was inflicted on {enemy.name} ,remaining health of {enemy.name} is  {enemy.health} ", ConsoleColor.Green);
                 Console.WriteLine();
-                Console.ResetColor();
+
             }
-            Thread.Sleep(1000);
         }
     }
 }
