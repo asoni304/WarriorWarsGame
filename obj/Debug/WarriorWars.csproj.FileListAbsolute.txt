@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\projects\c#\WarriorWars\bin\Debug\WarriorWars.exe.config
+C:\Users\User\Desktop\projects\c#\WarriorWars\bin\Debug\WarriorWars.exe
+C:\Users\User\Desktop\projects\c#\WarriorWars\bin\Debug\WarriorWars.pdb
+C:\Users\User\Desktop\projects\c#\WarriorWars\obj\Debug\WarriorWars.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\projects\c#\WarriorWars\obj\Debug\WarriorWars.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\projects\c#\WarriorWars\obj\Debug\WarriorWars.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\projects\c#\WarriorWars\obj\Debug\WarriorWars.exe
+C:\Users\User\Desktop\projects\c#\WarriorWars\obj\Debug\WarriorWars.pdb
